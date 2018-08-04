@@ -7,8 +7,8 @@ import MovieListComponent from "./movieListComponent";
 export default class MovieApp extends Component {
 
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         this.state = {
             movies: []

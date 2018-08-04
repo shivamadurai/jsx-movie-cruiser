@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 
 export default class NoDataComponent extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.styles = {
             paddingLeft: 30
         };

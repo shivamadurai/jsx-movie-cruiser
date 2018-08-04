@@ -3,8 +3,8 @@ import React, {Component} from "react";
 export default class SearchComponent extends Component {
 
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             searchTerm: '',
             filterTerm: ''
@@ -53,8 +53,7 @@ export default class SearchComponent extends Component {
                             value={this.state.searchTerm}
                             className="form-control"
                             placeholder="Enter Movie Name"
-                            onChange={this.handleOnChange.bind(this)}
-                        />
+                            onChange={this.handleOnChange.bind(this)}/>
                     </div>
                     <button type="submit" className="btn btn-primary mb-2">Search</button>
                     <div className="form-group mx-sm-3 mb-2">

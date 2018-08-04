@@ -4,8 +4,8 @@ import NoDataComponent from './noResponseData';
 import SerchMoiveList from './sarchMovieList';
 
 export default class MovieListComponent extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.styles = {
             marginTop: 30
         };
